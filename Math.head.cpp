@@ -22,3 +22,17 @@ template<class T> T MulMod( T a, T b, T c) {
 	}
 	return r;
 }
+
+template <class T>inline T GCD(T A,T B){T C;while(B!=0)C=B,B=A%B,A=C;return A;}
+
+template <class T>T EXT_GCD(T a,T b,T& x,T& y)	{
+	T t,ret;
+	if (!b){
+		x=1,y=0;
+		return a;
+	}
+	ret=EXT_GCD(b,a%b,x,y);
+	t=x,x=y,y=t-a/b*y;
+	return ret;
+}
+	
