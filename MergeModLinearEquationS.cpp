@@ -6,7 +6,7 @@
 
 template<class T>
 bool MergeModLinearEquationS(T c1,T b1,T c2,T b2,T &c,T &b){
-  T tb1=b1,tb2=b2;
+  	T tb1=b1,tb2=b2;
 	c=Mod(c2-c1,b2);
 	T G=GCD(b1,b2);
 	if(c%G)return false;
