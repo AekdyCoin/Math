@@ -7,7 +7,7 @@ template<class T> inline bool IsPrime(T n, int t = 2){
 	if(n==2)return true;
 	if(!(n&0x1))return false;
 	
-	long long x,m;
+	LL x,m;
 	int k,i;
 	while(t--){
 		k=0;
