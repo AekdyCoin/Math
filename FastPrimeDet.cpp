@@ -2,7 +2,7 @@
  * $t is the # of tests (2~3 maybe good!)
  */
 
-template<class T> inline bool IsPrime(T n, int t = 2){
+template<class T> inline bool FastPrimeDet(T n, int t = 2){
 	if(n<2)return false;
 	if(n==2)return true;
 	if(!(n&0x1))return false;
