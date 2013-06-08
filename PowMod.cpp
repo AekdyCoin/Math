@@ -1,6 +1,6 @@
 /*
  * Must guarantee c+c DO NOT OVERFLOW!!!(both a, b, c are INTEGERS)
- * $a or $b may be negative, however $c must be non-negative
+ * $a or $b may be negative, however $c must be positive
  */
 template<class T> T PowMod( T a, T b, T c) {
    	T r=Mod(a,c);
