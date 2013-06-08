@@ -1,6 +1,6 @@
 template<class T>inline T Pollard_rho(T c, T num){
 	int i(1), k(2);
-	T x = rand() % num;
+	T x = lrand() % num;
 	T y = x, comDiv;
 	do{
 		++i;
@@ -29,7 +29,7 @@ template<class T> void FastFactorization(T num){
 	}
 	T factor;
 	do{
-		factor=Pollard_rho(rand()%(num-1) + 1, num);
+		factor=Pollard_rho(lrand()%(num-1) + 1, num);
 	}while (factor>=num);
 	FastFactorization(factor);
 	FastFactorization(num/factor);
