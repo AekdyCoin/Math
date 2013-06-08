@@ -1,3 +1,4 @@
+
 template<class T>inline T Pollard_rho(T c, T num){
 	int i(1), k(2);
 	T x = rand() % num;
@@ -16,7 +17,11 @@ template<class T>inline T Pollard_rho(T c, T num){
 	}while(1);
 	return num;
 }
-	
+
+/*
+ * Algorithm Time Complexity( Exception) O(n^0.25) 
+ */
+ 
 template<class T> void FastFactorization(T num){
 	if (IsPrime(num)){
 		// num is one prime factor
