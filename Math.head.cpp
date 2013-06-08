@@ -1,3 +1,7 @@
+
+
+typedef long long LL ;
+
 /* a Mod b
  * $a could be negative, $b have to be positive integer
  */
@@ -35,4 +39,6 @@ template <class T>T EXT_GCD(T a,T b,T& x,T& y)	{
 	t=x,x=y,y=t-a/b*y;
 	return ret;
 }
-	
+
+LL lrand() {return (LL)rand() * rand() ; }
+
